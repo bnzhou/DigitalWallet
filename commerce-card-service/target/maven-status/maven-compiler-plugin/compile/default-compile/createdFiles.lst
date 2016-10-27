@@ -1,0 +1,4 @@
+io/spring/cloud/samples/commerce/cardservice/Application.class
+io/spring/cloud/samples/commerce/cardservice/controllers/CardController.class
+io/spring/cloud/samples/commerce/cardservice/repositories/CardRepository.class
+io/spring/cloud/samples/commerce/cardservice/domain/Card.class
