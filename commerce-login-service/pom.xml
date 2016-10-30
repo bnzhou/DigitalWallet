@@ -18,7 +18,7 @@
 	</parent>
 
 	<properties>
-		<start-class>io.spring.cloud.samples.commerce.addressservice.Application</start-class>
+		<start-class>io.spring.cloud.samples.commerce.login.Application</start-class>
 	</properties>
 
 	<dependencies>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html ng-app="fortunes">
+
+<head>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>-->
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/check_out.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.4/angular-route.min.js"></script>
+</head>
+
+<body>
+
+<div class="jumbotron container">
+    <h1>Digital Wallet</h1>
+    <p>Checkout Flow</p>
+</div>
+<div class="jumbotron container">
+    <div class="alert alert-success">
+        <strong>Welcome</strong> Pls continue your payment.
+    </div>
+
+    <form action="http://localhost:8081/transAdd" method="post" class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="id">id:</label>
+            <div class="col-sm-5">
+                <input type="text" name="id" value="40112942472241" class="form-control" id="id"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="urs">Username:</label>
+            <div class="col-sm-5">
+                <input type="text" name="username" value="user1" class="form-control" id="urs"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="addr">Address:</label>
+            <div class="col-sm-5">
+                <input type="text" name="address" value="" class="form-control" id="addr"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="cdnum">Card Number:</label>
+            <div class="col-sm-5">
+                <input type="text" name="cardnum" value="" class="form-control" id="cdnum"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="time">Time Stamp:</label>
+            <div class="col-sm-5">
+                <input type="text" name="timestamp" value="2016102710123942" class="form-control" id="time"/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Pay</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+</body>
+
+</html>

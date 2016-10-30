@@ -1,0 +1,4 @@
+io/spring/cloud/samples/commerce/address/domain/Address.class
+io/spring/cloud/samples/commerce/address/Application.class
+io/spring/cloud/samples/commerce/address/repositories/AddressRepository.class
+io/spring/cloud/samples/commerce/address/controllers/AddressController.class

@@ -8,3 +8,5 @@ spring:
         git:
           uri: https://github.com/bingnovo/DigitalWallet
           searchPaths: config
+
+

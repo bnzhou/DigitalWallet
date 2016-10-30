@@ -1,0 +1,34 @@
+server:
+  port: 8082
+
+#eureka:
+#  client:
+#    registryFetchIntervalSeconds: 5
+
+ribbon:
+  IsSecure: false
+
+#fortunes:
+#  ribbon:
+#    ServerListRefreshInterval: 5000
+
+security:
+  basic:
+    enabled: false
+
+management:
+  security:
+    enabled: false
+
+---
+
+spring:
+  profiles: pact
+
+ribbon:
+  eureka:
+    enabled: false
+
+commerce:
+  ribbon:
+    listOfServers: localhost:8080

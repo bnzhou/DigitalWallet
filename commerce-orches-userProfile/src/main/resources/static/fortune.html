@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html ng-app="fortunes">
+
+<head>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.4/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="#">Commerce Test Service</a>
+        </div>
+    </div>
+</div>
+
+<div ng-model="fortune">
+    <p>{{fortune.text}}</p>
+</div>
+</body>
+
+</html>

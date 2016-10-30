@@ -1,0 +1,4 @@
+io/spring/cloud/samples/commerce/transaction/domain/Transaction.class
+io/spring/cloud/samples/commerce/transaction/Application.class
+io/spring/cloud/samples/commerce/transaction/controllers/TransController.class
+io/spring/cloud/samples/commerce/transaction/repositories/AddressRepository.class
