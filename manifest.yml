@@ -1,0 +1,35 @@
+---
+memory: 512M
+instances: 1
+buildpack: java_buildpack
+env:
+  CF_TARGET: http://bingnan-cmu-cc-business.cfapps.io
+applications:
+- name: config-server
+  host: config-server-bingnan
+  path: commerce-config-server/target/commerce-config-server-0.0.1-SNAPSHOT.jar
+- name: eureka
+  host: eureka-bingnan
+  path: commerce-eureka/target/commerce-eureka-0.0.1-SNAPSHOT.jar
+- name: hystrix-dashboard
+  host: hystrix-dashboard-bingnan
+  path: commerce-hystrix-dashboard/target/commerce-hystrix-dashboard-0.0.1-SNAPSHOT.jar
+- name: commerce-item-service
+  host: commerce-item-bingnan
+  path: commerce-item-service/target/commerce-item-service-0.0.1-SNAPSHOT.jar
+  services:
+  - config-server
+  - service-registry
+- name: commerce-price-service
+  host: commerce-price-bingnan
+  path: commerce-price-service/target/commerce-price-service-0.0.1-SNAPSHOT.jar
+  services:
+  - config-server
+  - service-registry
+- name: commerce-ui
+  host: commerce-ui-bingnan
+  path: commerce-ui/target/commerce-ui-0.0.1-SNAPSHOT.jar
+  services:
+  - config-server
+  - service-registry
+  - circuit-breaker

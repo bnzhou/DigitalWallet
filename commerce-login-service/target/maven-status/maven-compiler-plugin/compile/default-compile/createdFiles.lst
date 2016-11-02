@@ -1,0 +1,4 @@
+io/spring/cloud/samples/commerce/login/domain/Login.class
+io/spring/cloud/samples/commerce/login/repositories/LoginRepository.class
+io/spring/cloud/samples/commerce/login/controllers/LoginController.class
+io/spring/cloud/samples/commerce/login/Application.class
